@@ -3,7 +3,9 @@ var Base58 = require('../Base58')
 
 var fixtures = require('./fixtures.json')
 
-describe('Base58', function() {
+describe('Base58', 
+
+function() {
   describe('encode', function() {
     fixtures.valid.forEach(function(f) {
       it('can encode ' + f.hex, function() {
